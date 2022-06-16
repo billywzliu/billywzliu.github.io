@@ -197,6 +197,6 @@ a:hover span.green {
     color: transparent;
   }
   50% {
-    color: var(--fg2);
+    color: var(--fg);
   }
 }
