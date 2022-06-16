@@ -1,35 +1,35 @@
 /* Gruvbox-dark */
 :root {
   --bg_h: #1d2021;
-  --bg:   #282828;
+  --bg: #282828;
   --bg_s: #32302f;
-  --bg1:  #3c3836;
-  --bg2:  #504945;
-  --bg3:  #665c54;
-  --bg4:  #7c6f64;
+  --bg1: #3c3836;
+  --bg2: #504945;
+  --bg3: #665c54;
+  --bg4: #7c6f64;
 
-  --fg:  #fbf1c7;
+  --fg: #fbf1c7;
   --fg1: #ebdbb2;
   --fg2: #d5c4a1;
   --fg3: #bdae93;
   --fg4: #a89984;
 
-  --red:    #fb4934;
-  --green:  #b8bb26;
+  --red: #fb4934;
+  --green: #b8bb26;
   --yellow: #fabd2f;
-  --blue:   #83a598;
+  --blue: #83a598;
   --purple: #d3869b;
-  --aqua:   #8ec07c;
-  --gray:   #928374;
+  --aqua: #8ec07c;
+  --gray: #928374;
   --orange: #fe8019;
 
-  --red-dim:    #cc2412;
-  --green-dim:  #98971a;
+  --red-dim: #cc2412;
+  --green-dim: #98971a;
   --yellow-dim: #d79921;
-  --blue-dim:   #458588;
+  --blue-dim: #458588;
   --purple-dim: #b16286;
-  --aqua-dim:   #689d6a;
-  --gray-dim:   #a89984;
+  --aqua-dim: #689d6a;
+  --gray-dim: #a89984;
   --orange-dim: #d65d0e;
 }
 
@@ -154,33 +154,49 @@
 }
 
 .indent {
-    padding-left: 2.5rem;
+  padding-left: 2.5rem;
 }
 
 .name {
-    font-size: 2.5rem;
+  font-size: 3.25rem;
 }
+
+/* Format */
 
 body {
-    background-color: var(--bg);
-    font-family: 'Fira Code', monospace;
-    font-size: 1.25rem;
-    padding: 0.75em;
+  background-color: var(--bg);
+  font-family: "Fira Code", monospace;
+  font-size: 1.25rem;
+  padding: 0.75rem;
 }
 
+/* Links */
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover span.blue {
-    color: var(--blue-dim)
+  color: var(--blue-dim);
 }
 
 a:hover span.green {
-    color: var(--green-dim)
+  color: var(--green-dim);
 }
 
-/* div#selected {
-    background-color: var(--bg1);
-    width: 100vw
-} */
+/* Blinking cursor */
+
+.blinking-cursor {
+  margin-left: -0.4rem;
+  color: var(--fg);
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: var(--fg2);
+  }
+}
