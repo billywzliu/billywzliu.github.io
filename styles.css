@@ -153,6 +153,8 @@
   color: var(--bg4);
 }
 
+/* Format */
+
 .indent {
   padding-left: 2.5rem;
 }
@@ -160,8 +162,6 @@
 .name {
   font-size: 3.25rem;
 }
-
-/* Format */
 
 body {
   background-color: var(--bg);
