@@ -160,13 +160,13 @@
 }
 
 .name {
-  font-size: 3.25rem;
+  font-size: 3.5rem;
 }
 
 body {
   background-color: var(--bg);
   font-family: "Fira Code", monospace;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   padding: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 
